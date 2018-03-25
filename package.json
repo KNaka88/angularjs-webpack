@@ -4,20 +4,22 @@
   "description": "",
   "private": true,
   "scripts": {
-    "build": "webpack"
+    "clean": "rimraf dist",
+    "build": "npm run clean && webpack"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "angular": "^1.6.9",
     "lodash": "^4.17.5",
-    "npm": "^5.8.0"
+    "npm": "^5.8.0",
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "webpack": "^4.2.0",
-    "webpack-cli": "^2.0.13"
+    "webpack-cli": "^2.0.13",
+    "rimraf": "^2.6.2"
   }
 }
